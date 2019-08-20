@@ -12,11 +12,10 @@ public class Greatest_Common_Factor {
         if (n1>n2) {
             divisor = n2;
         }else divisor = n1;
-
         while (n1 % divisor !=0 || n2 % divisor !=0){
             divisor--;
         }
 
-        System.out.println(divisor);
+        System.out.printf("Their GCD is: %d", divisor);
     }
 }
