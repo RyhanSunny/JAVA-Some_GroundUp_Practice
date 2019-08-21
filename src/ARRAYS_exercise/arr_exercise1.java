@@ -8,7 +8,7 @@ import java.util.Arrays;
 
  */
 
-public class arr_excercise1 {
+public class arr_exercise1 {
     public static void main(String[] args) {
 
         int[] numeric_array = {123,12,312,3123,123,12,3124,234,24,34,534};
