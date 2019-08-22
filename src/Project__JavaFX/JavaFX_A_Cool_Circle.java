@@ -28,5 +28,6 @@ public class JavaFX_A_Cool_Circle extends Application {
         primaryStage.setScene(new Scene(pane,600,300));
         primaryStage.setTitle("THIS IS A COOL CIRCLE BRO!");
         primaryStage.show();
+        // done for now
     }
 }
