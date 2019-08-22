@@ -17,5 +17,16 @@ public class Students {
         return grade;
     }
     //setters
+    public void setName(String name){
+        this.name = name;
+    }
+    public void setGrade(double grade){
+        this.grade = grade;
+    }
 
+    //to display
+    @Override
+    public String toString(){
+        return String.format("%s\t%.2f", this.name, this.grade);
+    }
 }
