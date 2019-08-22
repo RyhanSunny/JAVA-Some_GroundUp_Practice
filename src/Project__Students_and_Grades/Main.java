@@ -21,7 +21,7 @@ public class Main {
         //remove Ahmed from the list (we dont know its position
         //java101.remove("Ahmed");
         //remove index 3 (we dont know the name
-        //java101.remove(1);
+        java101.remove(1);
 
         System.out.println("Hello Java101 class. These are your grades:");
 
