@@ -1,3 +1,6 @@
+package Project__JavaFX;
+
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
