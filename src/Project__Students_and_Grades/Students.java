@@ -27,6 +27,6 @@ public class Students {
     //to display
     @Override
     public String toString(){
-        return String.format("%s\t%.2f", this.name, this.grade);
+        return String.format("%s:\t\t\t%.2f", this.name, this.grade);
     }
 }
