@@ -21,5 +21,9 @@ public abstract class Employee {
     //3- ABSTRACT SETTER METHOD
     public abstract void setSalary(double salary);
 
-
+    //4- TO STRING
+    @Override
+    public String toString(){
+        return "Employee name: " + name + ", with social security number: " + ssn;
+    }
 }
