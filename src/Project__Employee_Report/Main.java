@@ -15,7 +15,7 @@ public class Main {
 
         //2- INVOKE hireEmployee()
         try {
-            M251.hireEmployee("C:\\employee.txt");
+            M251.hireEmployee("C:\\employee.txt"); // store eployee.txt file into C Drive
         } catch (FileNotFoundException ex) {
             System.out.println("Error: File Not Found!");
         }
