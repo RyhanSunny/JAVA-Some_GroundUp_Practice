@@ -10,13 +10,13 @@ import java.util.Scanner;
 public class Employee_Report {
 
     //1- ATTRIBUTES
-    private ArrayList<HourlyEmployee> hempList;
-    private ArrayList<SalariedEmployee> sempList;
+    private ArrayList<Hourly_Employee> hempList;
+    private ArrayList<Salaried_Employee> sempList;
 
     //2- ZERO-ARG CONSTRUCTOR
-    public EmployeeReport(){
-        this.hempList = new ArrayList<HourlyEmployee> ();
-        this.sempList = new ArrayList<SalariedEmployee>();
+    public Employee_Report(){
+        this.hempList = new ArrayList<Hourly_Employee> ();
+        this.sempList = new ArrayList<Salaried_Employee>();
     }
 
     //3- READS DATA FROM FILE
@@ -37,7 +37,7 @@ public class Employee_Report {
                 hours = input.nextInt();
                 rate = input.nextInt();
 
-                HourlyEmployee hEmp = new HourlyEmployee(name, ssn, hours, rate);
+                Hourly_Employee hEmp = new Hourly_Employee(name, ssn, hours, rate);
                 double amount = rate*hours;
                 hEmp.setSalary(amount);
                 hempList.add(hEmp);
@@ -47,20 +47,20 @@ public class Employee_Report {
                 ssn = input.next();
                 salary = input.nextDouble();
 
-                SalariedEmployee sEmp = new SalariedEmployee(name, ssn);
+                Salaried_Employee sEmp = new Salaried_Employee(name, ssn);
                 sEmp.setSalary(salary);
                 sempList.add(sEmp);
             }
 
         }input.close();
-    }x` `
+    }
 
     //4-PRINT REPORT
-    public void printReporot(){
+    public void printReport(){
         System.out.println("                    Salaried Employee Report\n" +
                 "-------------------------------------------------------------------------------------------");
         if(!sempList.isEmpty()){
-            for(SalariedEmployee S : sempList){
+            for(Salaried_Employee S : sempList){
                 System.out.println(S.toString());
             }
         }
@@ -68,7 +68,7 @@ public class Employee_Report {
                 "                    Hourly Employee Report\n" +
                 "-------------------------------------------------------------------------------------------");
         if(!hempList.isEmpty()){
-            for(HourlyEmployee S : hempList){
+            for(Hourly_Employee S : hempList){
                 System.out.println(S.toString());
             }
         }
