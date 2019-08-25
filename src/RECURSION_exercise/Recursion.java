@@ -14,6 +14,10 @@ public class Recursion {
         // RECURSIVE CASE:
         }else{
             return n + Summation(n-1);
+            // 3 + Summation(2)
+            // 3 + 2 + Summation(1)
+            // 3 + 2 + 1 + Summation(0)
+            // 3 + 2 + 1 + 0 = 6
         }
     }
 
