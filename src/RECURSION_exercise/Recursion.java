@@ -2,7 +2,7 @@ package RECURSION_exercise;
 
 public class Recursion {
     public static void main(String[] args) {
-        System.out.printf("%d\n%d", Summation(3), Factorial(5));
+        System.out.printf("%d\n%d\n%d", Summation(3), Factorial(5), Exponential(5, 5));
     }
 
     // RECURSION BELOW
@@ -23,6 +23,16 @@ public class Recursion {
         }else {
             // RECURSIVE CASE:
             return n * Factorial(n-1);
+        }
+    }
+
+    public static int Exponential(int n, int p){
+        // BASE CASE:
+        if (p <= 0){
+            return 1;
+        }else{
+            // RECURSIVE CASE:
+            return n * Exponential(n, p-1);
         }
     }
 }
