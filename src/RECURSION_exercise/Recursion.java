@@ -15,4 +15,14 @@ public class Recursion {
             return n + Summation(n-1);
         }
     }
+
+    public static int Factorial(int n){
+        // BASE CASE:
+        if (n <= 1){
+            return 1;
+        }else {
+            // RECURSIVE CASE:
+            return n * Factorial(n-1);
+        }
+    }
 }
