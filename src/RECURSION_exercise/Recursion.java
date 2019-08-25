@@ -2,7 +2,7 @@ package RECURSION_exercise;
 
 public class Recursion {
     public static void main(String[] args) {
-        System.out.println(Summation(3));
+        System.out.printf("%d\n%d", Summation(3), Factorial(5));
     }
 
     // RECURSION BELOW
