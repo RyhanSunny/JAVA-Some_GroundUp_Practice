@@ -28,6 +28,10 @@ public class Recursion {
         }else {
             // RECURSIVE CASE:
             return n * Factorial(n-1);
+            // Factorial(4) = 4 * Factorial(3)
+            // 4 * 3 * Factorial(2)
+            // 4 * 3 * 2 * Factorial(1)
+            // 4 * 3 * 2 * 1
         }
     }
 
@@ -38,6 +42,10 @@ public class Recursion {
         }else{
             // RECURSIVE CASE:
             return n * Exponential(n, p-1);
+            // 5 * exponentiation(5, 2)
+            // 5 * 5 * exponentiation(5, 1)
+            // 5 * 5 * 5 * exponentiation(5, 0)
+            // 5 * 5 * 5 * 1
         }
     }
 
