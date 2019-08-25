@@ -2,7 +2,7 @@ package RECURSION_exercise;
 
 public class Recursion {
     public static void main(String[] args) {
-
+        System.out.println(Summation(3));
     }
 
     // RECURSION BELOW
